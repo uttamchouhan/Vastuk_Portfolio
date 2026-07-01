@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Marquee — Railway/Linear style infinite scroll */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  width: max-content;
+  will-change: transform;
+  animation: scroll 40s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Custom height utilities */
+@utility h-92 {
+  height: 23rem;
+}
+
+@utility h-116 {
+  height: 29rem;
+}
+
+/* Selection color */
+::selection {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Smooth image rendering */
+img {
+  image-rendering: auto;
+}
