@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 
-// https://vite.dev/config/
-export default defineConfig({
+// GitHub Pages: https://uttamchouhan.github.io/Vastuk_Portfolio/
+export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/Vastuk_Portfolio/" : "/",
   plugins: [react(), tailwindcss()],
-})
+}));

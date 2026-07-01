@@ -5,16 +5,12 @@ import img4 from "../assets/20624.jpg";
 import img5 from "../assets/20644.jpg";
 import img6 from "../assets/20647.jpg";
 import img7 from "../assets/20650.jpg";
-import img8 from "../assets/20653.jpg";
 import img9 from "../assets/20656.jpg";
 import img10 from "../assets/20659.jpg";
-import img11 from "../assets/20662.jpg";
 import img12 from "../assets/20665.jpg";
 import img13 from "../assets/20668.jpg";
-import img14 from "../assets/20671.jpg";
 import img15 from "../assets/20674.jpg";
 import img16 from "../assets/20677.jpg";
-import img17 from "../assets/20680.jpg";
 import img18 from "../assets/20686.jpg";
 import heroImg from "../assets/apartment-architecture-art-276724.jpg";
 
