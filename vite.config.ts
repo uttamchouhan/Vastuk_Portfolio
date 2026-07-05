@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // GitHub Pages: https://uttamchouhan.github.io/Vastuk_Portfolio/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/Vastuk_Portfolio/" : "/",
+  base: mode === "production" ? "/inter_design_web/" : "/",
   plugins: [react(), tailwindcss()],
 }));
